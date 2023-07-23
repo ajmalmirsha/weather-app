@@ -1,38 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.location-setup {
+    display: inline;
+    width: 50%;
+}
+
+.main-div {
+    display: flex;
+    align-items: center!important;
+    justify-content: center;
+}
+
 .App {
-  text-align: center;
+    background-color: #23759C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border-radius: 10px;
+    height: 500px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    background-image: url("background.png");
+    height: 60%;
+    width: 50%;
+    border-radius: 32px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-data {
+    height: 70%;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.location-input {
+    width: 220px;
+    height: 35px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 8px;
+    border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.location-input:focus {
+    outline: solid 1px;
+}
+
+.observations {
+    color: #cdcaca;
+    margin-top: 10px;
+    margin-left: 2px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.location {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+}
+
+.region {
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.loading {
+    color: white;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.temp {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.last-update {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-label {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media(max-width: 1700px) {
+
+    .App {
+        background-image: url("background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .container {
+        background: none;
+        margin-top: 40px;
+    }
+
+    .header-input {
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .main-data {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .location {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .temp {
+        font-size: 46px;
+        text-align: center;
+    }
 }
